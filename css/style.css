@@ -18,7 +18,7 @@
 body {
   margin: 0;
   font-family: "Countryhouse", sans-serif;
-  background: url("../assets/bg.png") center top repeat;
+background: url("../assets/bg.png") center no-repeat;
   background-size: auto;
   color: var(--white);
 }
