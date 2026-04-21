@@ -185,6 +185,64 @@ img {
   height: 48px;
 }
 
+.fanart-wall {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fanart-featured {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.fanart-card {
+  background: var(--blue-box);
+  border: 3px solid var(--blue-coolbox);
+  text-align: center;
+  padding: 4px;
+}
+
+.fanart-card img {
+  width: 100%;   /* fills the card width */
+  height: auto;  /* keeps aspect ratio */
+  max-height: 150px; /* caps height so multiple fit vertically */
+  object-fit: cover;  /* crops nicely if needed */
+  image-rendering: pixelated;
+}
+
+.fanart-credit {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.8em;
+  color: var(--blue-ice);
+  text-decoration: none;
+}
+
+
+
+/* This is for a later site update. */
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      padding: 20px 0
+    }
+
+    .img-button {
+      background: var(--blue-box);
+      border: 4px solid var(--blue-coolbox);
+      padding: 12px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .img-button img {
+      width: 100%;
+      height: auto;
+      image-rendering: pixelated;
+}
+
 .button {
   display: inline-block;
   margin-top: 14px;
@@ -195,4 +253,43 @@ img {
   color: var(--white);
   text-decoration: none;
   cursor: pointer;
+}
+
+.character-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.character-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--blue-box);
+  border: 4px solid var(--blue-ice);
+  padding: 18px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.character-card img {
+  height: auto;
+  width: auto;
+  max-height: 120px;
+  max-width: 140px; 
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+
+
+.character-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.character-info p {
+  margin: 4px 0 0 0;
+  font-size: 0.9em;
+  opacity: 0.9;
 }
